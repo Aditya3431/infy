@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>User Profile</h2>
+        </header>
+        <section class="user-info">
+            <div class="profile-header">
+                <img src="https://www.bing.com/th/id/OIP.YclUfa9exzbDhuHofOepHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7" alt="Profile Picture">
+                <button class="edit-btn">Edit Profile</button>
+            </div>
+            <p><strong>Full Name:</strong>John Doe</p>
+            <p><strong>Email:</strong>john.doe@example.com</p>
+            <p><strong>Phone Number:</strong>+1 234 567 8901</p>
+            <p><strong>Address:</strong>1234 Main st,Spring Field</p>
+        </section>
+        <section class="order-history">
+            <h3>Recent Orders</h3>
+            <div class="order">
+                <p><strong>Chicken Alfredo Pasta</strong></p>
+                <p>Date: Apr 24,2025 | Status:Cancelled</p>
+                <div class="item">
+                    <button class="action-btn">Reorder</button>
+                    <button class="action-btn">View Details</button>
+                </div>
+            </div>
+            <a href="#">View All Orders</a>
+        </section>
+        <section class="settings">
+            <h3>Settings & Support</h3>
+            <ul>
+                <li><a href="#">Change Password</a></li>
+                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+
+        </section>
+
+    </div>
+</body>
+</html>

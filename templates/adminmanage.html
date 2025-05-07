@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin- Manage Food Courts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/adminmanage.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Manage Food Courts</h1>
+        <div class="restaurant-grid">
+            <div class="restaurant-card">
+                <img src="https://th.bing.com/th/id/R.f8ab5f340cb48c202b9a594b05f6ae1b?rik=hEF9IysitIxmmA&riu=http%3a%2f%2fwww.veronissima.com%2fen%2fimg%2fitalian-lesson-at-the-restaurant-dialogue.jpg&ehk=fhgaoOhdLWCjba%2f%2ffvjcUbkXkTArMVcsMpvkh%2b42xtM%3d&risl=&pid=ImgRaw&r=0" alt="restaurant-name">
+                <p>Restaurant Description</p>
+                <section class="btn-card">
+                    <div class="btn">
+                        <p>Lorem ipsum dolor sit amet consectetur a</p>
+                        <button class="action-btn">Add Restaurant</button>
+                    </div><br><br>
+                    <div class="btn">
+                        <p>Lorem ipsum dolor sit amet consectetur ad</p>
+                        <button class="action-btn">Update Resturnt details</button>
+                    </div><br><br>
+                    <div class="btn">
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                        <button class="action-btn">Delete Resturant</button>
+                    </div>
+                </section>
+            </div>
+            <!-- {% for restaurant in restaurants %} -->
+            <!--  -->
+            <!-- {%endfor%} -->
+        </div>
+        <!-- <div class="btn-group">
+            <button class="action-btn"> Add New Restaurant</button>
+        </div> -->
+    </div>
+</body>
+</html>

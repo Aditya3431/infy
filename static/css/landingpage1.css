@@ -1,0 +1,93 @@
+.hero {
+    background: url('https://th.bing.com/th/id/R.1368acaad60f001fc3793d4d1adff485?rik=w6POuwdc4%2f98cw&riu=http%3a%2f%2fi.huffpost.com%2fgen%2f1107767%2fthumbs%2fo-CLUB-SANDWICH-facebook.jpg&ehk=ofObIJj0qE%2bgM8IOqK%2bGVIShbO0wVhF1CKHPNhDQj6M%3d&risl=&pid=ImgRaw&r=0') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 700px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color:#e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.login-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background: #fff;
+}
+
+.login-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 45%;
+    background: #fafafa;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-box .buttons {
+    margin-top: 15px;
+}
+
+.menu-highlights {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: 200px;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.cta {
+    background: #fff;
+    padding: 40px 20px;
+}
+
+.cta-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cta-content img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.cta-content div {
+    max-width: 600px;
+}
+.button:hover {
+    background-color: #c0392b; 
+}

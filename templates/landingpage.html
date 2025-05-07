@@ -1,0 +1,188 @@
+<html lang="en"> 
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Catering Landing Page
+  </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/tailwaind.css') }}"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Cloudflare.css') }}"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+      min-height: 100vh;
+      background-color: white;
+      overflow-x: hidden;
+    }
+    /* Transparent subtle background image */
+    #bg-image {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120vw;
+      height: 100vh;
+      object-fit: cover;
+      opacity: 0.08;
+      pointer-events: none;
+      z-index: -1;
+      user-select: none;
+    }
+  </style>
+ </head>
+ <body class="text-gray-900 flex flex-col min-h-screen">
+  <img alt="Transparent background image of a catering spread with plates and food, softly blurred and faded" id="bg-image" src="https://storage.googleapis.com/a1aa/image/bbc2c36f-b7a6-4686-7f1d-b830fc8ae11b.jpg"/>
+  <header class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto w-full relative z-10">
+   <div class="flex items-center space-x-2 font-semibold text-base bg-white bg-opacity-90 rounded-md px-2 py-1">
+    <i class="fas fa-exclamation-triangle text-black">
+    </i>
+    <span>
+     Infy Catering
+    </span>
+   </div>
+  </header>
+  <main class="flex-grow max-w-7xl mx-auto px-6 py-10 w-full flex flex-col items-center relative z-10">
+   <section aria-label="Delicious Catering for Your Special Event" class="relative rounded-xl overflow-hidden max-w-[900px] w-full bg-white bg-opacity-90 shadow-lg">
+    <img alt="A large spread of various catering dishes in black bowls and white platters on a table, including vegetables, meats, and nuts" class="w-full h-auto object-cover rounded-xl" height="300" src="https://storage.googleapis.com/a1aa/image/398697c3-0572-4f44-5166-0d1fa559a0cd.jpg" width="900"/>
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center px-6 text-center rounded-xl">
+     <h1 class="text-white font-extrabold text-3xl sm:text-4xl md:text-5xl leading-tight max-w-[700px]">
+      Delicious Catering for Your Special Event
+     </h1>
+     <p class="text-white text-sm sm:text-base max-w-[700px] mt-3 leading-relaxed">
+      Enjoy a stress-free event with our top-notch catering services,
+          offering diverse menus and personalized options to suit any
+          occasion. From corporate meetings to wedding celebrations, our team
+          will handle every detail, ensuring your guests savor a memorable
+          dining experience.
+     </p>
+     <button class="mt-6 bg-[#E44316] text-white font-semibold rounded-md px-5 py-2 text-sm hover:bg-[#cc3e14] transition"  style="background-color: rgb(223, 13, 13);">
+      Get a Quote
+     </button>
+    </div>
+   </section>
+   <section aria-label="User and Admin login options" class="mt-16 max-w-[900px] w-full flex flex-row gap-10 justify-center">
+    <!-- User Registration/Login Option -->
+    <div class="flex-1 border border-gray-300 rounded-xl p-6 shadow-inner hover:shadow-md transition cursor-pointer flex flex-col">
+     <h2 class="font-extrabold text-2xl mb-4 text-center text-black">
+      User Registration &amp; Login
+     </h2>
+     <p class="text-gray-600 text-sm mb-6 text-center flex-grow">
+      Register as a new user or login to access our catering services, view menus, and manage your bookings.
+     </p>
+     <div class="flex justify-center space-x-4">
+      <button class="bg-[#E44316] text-white font-semibold rounded-md px-6 py-2 text-sm hover:bg-[#cc3e14] transition w-28" style="background-color: rgb(223, 13, 13);">
+       Signup
+      </button>
+      <button class="bg-gray-200 text-black font-semibold rounded-md px-6 py-2 text-sm hover:bg-gray-300 transition w-28"  style= " color:white ;background-color: rgb(223, 13, 13);">
+       Login
+      </button>
+     </div>
+    </div>
+    <!-- Admin Login Option -->
+    <div class="flex-1 border border-gray-300 rounded-xl p-6 shadow-inner hover:shadow-md transition cursor-pointer flex flex-col">
+     <h2 class="font-extrabold text-2xl mb-4 text-center text-black">
+      Admin Login
+     </h2>
+     <p class="text-gray-600 text-sm mb-6 text-center flex-grow">
+      Login as an administrator to manage catering options, menus, and customer requests.
+     </p>
+     <div class="flex justify-center">
+      <button class="bg-[#E44316] text-white font-semibold rounded-md px-6 py-2 text-sm hover:bg-[#cc3e14] transition w-32"  style="background-color: rgb(223, 13, 13);">
+       Admin Login
+      </button>
+     </div>
+    </div>
+   </section>
+   <section class="mt-16 max-w-[900px] mx-auto w-full bg-white bg-opacity-90 rounded-lg shadow-lg p-6">
+    <h2 class="font-semibold text-lg mb-4 px-1">
+     Our Menu Highlights
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 px-1">
+     <figure class="flex flex-col items-center space-y-1">
+      <img alt="Platter with assorted sandwiches and wraps with fresh vegetables" class="rounded-md object-cover w-full h-[120px]" height="120" src="https://storage.googleapis.com/a1aa/image/bbc2c36f-b7a6-4686-7f1d-b830fc8ae11b.jpg" width="200"/>
+      <figcaption class="text-xs text-center">
+       Sandwich &amp; Wrap Platter
+      </figcaption>
+     </figure>
+     <figure class="flex flex-col items-center space-y-1">
+      <img alt="Table display of artisan cheeses and fresh fruit including grapes and pineapples" class="rounded-md object-cover w-full h-[120px]" height="120" src="https://storage.googleapis.com/a1aa/image/e42bfc71-1c89-42bf-c6aa-7e02d752953a.jpg" width="200"/>
+      <figcaption class="text-xs text-center">
+       Artisan Cheese &amp; Fruit
+      </figcaption>
+     </figure>
+     <figure class="flex flex-col items-center space-y-1">
+      <img alt="Assorted decadent desserts including macarons and berries on a purple background" class="rounded-md object-cover w-full h-[120px]" height="120" src="https://storage.googleapis.com/a1aa/image/f1cf8535-5623-4448-c0e3-05f38af2bca1.jpg" width="200"/>
+      <figcaption class="text-xs text-center">
+       Decadent Desserts
+      </figcaption>
+     </figure>
+     <figure class="flex flex-col items-center space-y-1">
+      <img alt="Selection of vibrant fresh salads in black containers with various toppings" class="rounded-md object-cover w-full h-[120px]" height="120" src="https://storage.googleapis.com/a1aa/image/521d27f5-4ffb-487d-bc58-d975f2902ede.jpg" width="200"/>
+      <figcaption class="text-xs text-center">
+       Vibrant Salad 
+      </figcaption>
+     </figure>
+    </div>
+   </section>
+   <section class="mt-12 max-w-[900px] mx-auto flex flex-col sm:flex-row items-center sm:items-start gap-6 px-1 w-full bg-white bg-opacity-90 rounded-lg shadow-lg p-6">
+    <img alt="Catering team wearing black aprons preparing food trays in a kitchen" class="rounded-xl w-full sm:w-[320px] object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/4f6f6c1c-afa0-4901-f268-10a13c95cc78.jpg" width="320"/>
+    <div class="flex flex-col flex-1">
+     <h3 class="font-extrabold text-3xl leading-tight mb-3">
+      Let's Make Your
+      <br/>
+      Event Unforgettable
+     </h3>
+     <p class="text-sm leading-relaxed mb-6">
+      Contact us today to discuss your catering needs and create a customized
+          menu that perfectly complements your event. Our expert team is dedicated
+          to providing exceptional service and delectable cuisine that will delight
+          your guests.
+     </p>
+     <button class="bg-[#E44316] text-white font-semibold rounded-md px-6 py-3 text-sm w-full sm:w-auto hover:bg-[#cc3e14] transition"  style="background-color: rgb(223, 13, 13);">
+      Request a Quote
+     </button>
+    </div>
+   </section>
+  </main>
+  <footer class="max-w-7xl mx-auto px-6 py-10 text-center text-gray-500 text-xs select-none relative z-10">
+   <nav class="flex justify-center space-x-12 mb-6 flex-wrap">
+    <a class="hover:underline" href="#">
+     About Us
+    </a>
+    <a class="hover:underline" href="#">
+     Our Services
+    </a>
+    <a class="hover:underline" href="#">
+     Menus
+    </a>
+    <a class="hover:underline" href="#">
+     Contact
+    </a>
+    <a class="hover:underline" href="#">
+     FAQ
+    </a>
+   </nav>
+   <div class="flex justify-center space-x-6 mb-6 text-gray-400 text-base">
+    <a aria-label="Facebook" class="hover:text-gray-600" href="#">
+     <i class="fab fa-facebook-f">
+     </i>
+    </a>
+    <a aria-label="Twitter" class="hover:text-gray-600" href="#">
+     <i class="fab fa-twitter">
+     </i>
+    </a>
+    <a aria-label="Instagram" class="hover:text-gray-600" href="#">
+     <i class="fab fa-instagram">
+     </i>
+    </a>
+   </div>
+   <div>
+    © 2025 Catering . All rights reserved.
+   </div>
+  </footer>
+ </body>
+</html>
+
+

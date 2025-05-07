@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magna Food court</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .menu-section {
+      margin-bottom: 40px;
+    }
+    .menu-item {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      margin: 10px 0;
+    }
+    .menu-text {
+      flex: 1;
+    }
+    .menu-text h3 {
+      margin: 0;
+    }
+    .menu-text p {
+      margin: 5px 0;
+    }
+    .menu-image {
+      width: 120px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-left: 20px;
+    }
+    .add-button {
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .add-button:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <h1>Magna Food Court</h1>
+
+  <div class="menu-section">
+    <h2>Popular Items</h2>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Chicken Roll</h3>
+        <p>price - 90</p>
+        <p>A delicious wrap made with juicy,spiced chicken cooked to perfection ,wrapped in a soft paratha or flatbread and layered with fresh onions,tangy sauces,and optional veggies or cheese.</p>
+        <button class="add-button" onclick="addItem(' Chicken Roll')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP._JIF_3jkeUZEkHpQWQGX9QHaEq?w=314&h=197&c=7&r=0&o=5&pid=1.7" alt=" Chicken Roll" class="menu-image">
+    </div>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Veg Roll </h3>
+        <p>price - Rs 70</p>
+        <p>A soft,warm wrap filled with a medley of sauteed vegetables,flavourful spices,and tangy sauces.</p>
+        <button class="add-button" onclick="addItem('Veg Roll')">Add Item</button>
+      </div>
+      <img src="https://www.bing.com/th/id/OIP.32URY1OO7cDvTR2G3FcuAwAAAA?w=310&h=152&c=7&r=0&o=5&pid=1.7" alt="Veg Roll " class="menu-image">
+    </div>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Veg Puff</h3>
+        <p>price - Rs 85</p>
+        <p>A puff pastry are all-purpose flour, butter (or shortening), water and salt.</p>
+        <button class="add-button" onclick="addItem('Veg Puff')">Add Item</button>
+      </div>
+      <img src="https://www.bing.com/th/id/OIP.k3QoFZUqpS7WJgJbEB0gigHaE_?w=272&h=184&c=7&r=0&o=5&pid=1.7" alt="Veg Puff" class="menu-image">
+    </div>
+    <div class="menu-item">
+        <div class="menu-text">
+          <h3>Chicken Twist</h3>
+          <p>price - Rs 70</p>
+          <p>A savory,golden-baked pastry filled with seasoned chicken,herbs,and melted cheese,all wrapped in a flaky,twisted dough that delivers a delightful crunch in every bite.</p>
+          <button class="add-button" onclick="addItem('Chicken Twist')">Add Item</button>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.Abmmye2Ky6Y4itPJJictkwHaE-?w=292&h=196&c=7&r=0&o=5&pid=1.7" alt="Chicken Twist" class="menu-image">
+      </div>
+      <div class="menu-item">
+        <div class="menu-text">
+          <h3>Veg Sandwitch </h3>
+          <p>price - Rs 50</p>
+          <p>A fresh and wholesome sandwitch layered with crisp vegetables,creamy spreads,and flavourful seasonings,all tucked between slices of soft,toasted bread-perfect for a light yet satisfying bite.</p>
+          <button class="add-button" onclick="addItem('Veg Sandwitch ')">Add Item</button>
+        </div>
+        <img src="https://www.bing.com/th/id/OIP.RtwXyZbJROfq9yN398oKEQHaD4?w=311&h=180&c=7&r=0&o=5&pid=1.7" alt="Veg Sandwitch " class="menu-image">
+      </div>
+      <div class="menu-item">
+        <div class="menu-text">
+          <h3>French Fries </h3>
+          <p>price - Rs 50</p>
+          <p>Crispy,golden-brown potato sticks fried to perfection and lightly salted.</p>
+          <button class="add-button" onclick="addItem('French Fries')">Add Item</button>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.vraKh_NRzvoVI1k_EeLKugHaE8?w=251&h=180&c=7&r=0&o=5&pid=1.7" alt="French Fries" class="menu-image">
+      </div>
+  </div>
+
+  <div class="menu-section">
+    <h2>Juice</h2>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Mix fruit juice</h3>
+        <p>price - Rs 80</p>
+        <p>Mixture of all the seasonal fruits.</p>
+        <button class="add-button" onclick="addItem('Mix fruit juice')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP.ZYgSDpO5byg-YQ48yLanAgHaGX?w=200&h=180&c=7&r=0&o=5&pid=1.7" alt="Mix fruit juice" class="menu-image">
+    </div>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Mango Juice</h3>
+        <p>price - Rs 70</p>
+        <p>A mixture of fresh Mangoes,sugar and some ice cubes.</p>
+        <button class="add-button" onclick="addItem('Mango Juice')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP.ntRtgrO_pwP8I3S-X5SeFQHaE7?w=266&h=180&c=7&r=0&o=5&pid=1.7" alt="Mango Juice" class="menu-image">
+    </div>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Grape Juice</h3>
+        <p>price - Rs 70</p>
+        <p>A mixture of fresh Grapes,sugar and some ice cubes..</p>
+        <button class="add-button" onclick="addItem('Grape Juice')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP.RS509uLC6GEqdOXS1cdiEgHaE6?w=269&h=180&c=7&r=0&o=5&pid=1.7" alt="Grape Juice" class="menu-image">
+    </div>
+    <div class="menu-item">
+        <div class="menu-text">
+          <h3>Orange Juice</h3>
+          <p>price - Rs 70</p>
+          <p>A mixture of fresh Oranges ,sugar and some ice cubes..</p>
+          <button class="add-button" onclick="addItem('Orange Juice')">Add Item</button>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.F_W9U4L_wpNejHZyMWQivgAAAA?w=260&h=180&c=7&r=0&o=5&pid=1.7" alt="Orange Juice" class="menu-image">
+      </div>
+      <div class="menu-item">
+        <div class="menu-text">
+          <h3>Lime Juice</h3>
+          <p>price - Rs 70</p>
+          <p>A tangy,citrusy liquid extracted from fresh limes,typically green and oval-shaped fruits,sugar and some ice cubes,rich in vitamin C and antioxidants.</p>
+          <button class="add-button" onclick="addItem('Lime Juice')">Add Item</button>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.2ziZG6li6fKnUpwx9oJTYQHaEK?w=333&h=187&c=7&r=0&o=5&pid=1.7" alt="Lime Juice" class="menu-image">
+      </div>
+      <div class="menu-item">
+        <div class="menu-text">
+          <h3>Banana Shake</h3>
+          <p>price - Rs 65</p>
+          <p>A mixture of fresh Banana,milk,sugar and some ice cubes..</p>
+          <button class="add-button" onclick="addItem('Banana Shake')">Add Item</button>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.4D6wRx8QrcE-6nGfNse--AHaE8?w=261&h=180&c=7&r=0&o=5&pid=1.7" alt="Banana Shake" class="menu-image">
+      </div>
+      <div class="menu-item">
+        <div class="menu-text">
+          <h3>Oreo Chocolate Shake</h3>
+          <p>price - Rs 90</p>
+          <p>Oreo Biscuts,sugar,milk,chocolates,choco powder, and some ice cubes..</p>
+          <button class="add-button" onclick="addItem('Oreo Chocolate Shake')">Add Item</button>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.J6SzpiLgcyw--UgcVwFyqQHaE8?w=232&h=180&c=7&r=0&o=5&pid=1.7" alt="Oreo Chocolate Shake" class="menu-image">
+      </div>
+  </div>
+
+  <div class="menu-section">
+    <h2>Main Courses</h2>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Veg Combo</h3>
+        <p>price - Rs 50</p>
+        <p>Rice or Roti(2 pieces),Dal with one delicious Curry item .</p>
+        <button class="add-button" onclick="addItem('Veg Combo')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/R.55db1c6742067a5b041910bde6e2004f?rik=q6cVfkLABmhEqg&riu=http%3a%2f%2fthumbs.dreamstime.com%2fz%2findian-meal-consisting-roti-rice-dal-vegetable-kofta-32373920.jpg&ehk=0k3MJUiAoi1FKB2pesEcMF51FwsuyPVQF4TrczEYUCY%3d&risl=&pid=ImgRaw&r=0" alt="Veg Combo" class="menu-image">
+    </div>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Non-veg Combo</h3>
+        <p>price - Rs 65</p>
+        <p>Rice or Roti(2 pieces) with Egg or Chicken curry.</p>
+        <button class="add-button" onclick="addItem('Non-veg Combo')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP.5KdPgWvEbB5u3YRyHod-fQHaEK?w=284&h=180&c=7&r=0&o=5&pid=1.7" alt="Non-veg Combo" class="menu-image">
+    </div>
+    <div class="menu-item">
+        <div class="menu-text">
+          <h3>Chicken dum Briyani</h3>
+          <p>price - Rs 130</p>
+          <p>A Classic South Asian dish made by layering marinated chicken with long-grain basmati rice,infused with spices such as cummin,coriander,garam masala.</p>
+          <button class="add-button" onclick="addItem('Chicken dum Briyani')">Add Item</button>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.FAFAYZIg8jtvvcBfDGCtjAHaJ4?rs=1&pid=ImgDetMain" alt="Chicken dum Briyani" class="menu-image">
+      </div>
+      <div class="menu-item">
+        <div class="menu-text">
+          <h3>Veg Briyani</h3>
+          <p>price - Rs 80</p>
+          <p>A colorful rice dish made with basmati rice,fresh vegetables,and a blend of aromatic spices like cardamon,cloves and cinnamon.</p>
+          <button class="add-button" onclick="addItem('Veg Briyani')">Add Item</button>
+        </div>
+        <img src="https://i.ytimg.com/vi/Do7ZdUodDdw/maxresdefault.jpg" alt="Veg Briyani" class="menu-image">
+      </div>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>South Meals</h3>
+        <p>price - Rs 80</p>
+        <p>Rice,Roti 2 pieces,Sambar,Rasam,One Fry item and a Curry.</p>
+        <button class="add-button" onclick="addItem('South Meals')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP.RQ83hiVo7DV41NguNXP2KQHaE7?w=242&h=180&c=7&r=0&o=5&pid=1.7" alt="South Meals" class="menu-image">
+    </div>
+  
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>North Meals</h3>
+      <p>price - Rs 80</p>
+      <p>Rice,Roti 2 pieces,One Fry item, Seasonal vegetable Curry,salad.</p>
+      <button class="add-button" onclick="addItem('North Meals')">Add Item</button>
+    </div>
+    <img src="https://th.bing.com/th/id/OIP.4YFh-4Up-4_YNxKG7ghgVAHaEK?w=308&h=180&c=7&r=0&o=5&pid=1.7" alt="North Meals" class="menu-image">
+  </div>
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>Rajma Chawal</h3>
+      <p>price - Rs 50</p>
+      <p>A comforting north indian featuring red kidney beans simmered in a rich ,spiced tomato gravy,served with steamed basamati rice for a hearty and satisfying rice.</p>
+      <button class="add-button" onclick="addItem('Rajma Chawal')">Add Item</button>
+    </div>
+    <img src="https://www.bing.com/th/id/OIP.swclREp2zDpbAIkHwuk1DwHaGP?w=209&h=180&c=7&r=0&o=5&pid=1.7" alt="Rajma Chawal" class="menu-image">
+  </div>
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>Chole Rice  </h3>
+      <p>price - Rs 50</p>
+      <p>A flavoured combination of spicy chickenpea curry cooked in a blend of traditional Indian spices,paired perfect;y with fluffy steamed rice for a wholesome,filling dish</p>
+      <button class="add-button" onclick="addItem('Chole Rice')">Add Item</button>
+    </div>
+    <img src="https://www.bing.com/th/id/OIP.G05eqi8vXyL9tOAmPaF-hAHaE8?w=238&h=180&c=7&r=0&o=5&pid=1.7" alt="Chole Rice" class="menu-image">
+  </div>
+</div>
+
+  <div class="menu-section"> 
+    <h2>Desserts</h2>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Chocolate Mousse</h3>
+        <p>price - Rs 72</p>
+        <p>Rich and creamy chocolate mousse topped with whipped cream and chocolate shavings.</p>
+        <button class="add-button" onclick="addItem('Chocolate Mousse')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP.aGVlR7Pnc4OGyaw879yqaQHaE7?w=299&h=200&c=7&r=0&o=5&pid=1.7" alt="Chocolate Mousse" class="menu-image">
+    </div>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Fruit Tart</h3>
+        <p>price - Rs 75</p>
+        <p>A flaky tart crust filled with pastry cream and topped with an assortment of fresh seasonal fruits.</p>
+        <button class="add-button" onclick="addItem('Fruit Tart')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP.RGbvlnc1OtDFvwAjWuzcdwHaEp?w=279&h=180&c=7&r=0&o=5&pid=1.7" alt="Fruit Tart" class="menu-image">
+    </div>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Cheesecake</h3>
+        <p>price - Rs 95</p>
+        <p>Classic cheesecake with a graham cracker crust and a smooth, creamy filling, served with a berry compote.</p>
+        <button class="add-button" onclick="addItem('Cheesecake')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP.GLI2WQUVnu6AdbnmfGmixwHaE8?rs=1&pid=ImgDetMain" alt="Cheesecake" class="menu-image">
+    </div>
+    <div class="menu-item">
+        <div class="menu-text">
+          <h3>Ice-Creams</h3>
+          <p>price - Rs 90</p>
+          <p>A smooth,creamy frozen dessert made from rich blend of milk,cream,sugar,and flavorings.Churned while freezing to create a light, airy texture,it comes in a wide variety of flavours..</p>
+          <button class="add-button" onclick="addItem('Cheesecake')">Add Item</button>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.qWEc89dzq5Vc2K_HcwrfZgHaEJ?rs=1&pid=ImgDetMain" alt="Ice-Cream" class="menu-image">
+      </div>
+  </div>
+
+  <script>
+    function addItem(itemName) {
+      alert(itemName + ' added to your order!');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/foodcourt.css') }}"/>
+    <title>Infy Catering</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="color: white;">Infy Catering</h1>
+        
+        <nav>
+            <ul>
+               
+                <li style=" color: white;">Cart</strong></li>
+                <li style=" color: white;"> 
+                    <a href="{{url_for('profile_page')}}" style="color: white;">Profile</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Popular Food Courts</h2>
+        <span>
+            <div class="card-container" >
+                
+                <!-- <a href="{{url_for('oasis_menu_page')}}" style="color:#c0392b;"> -->
+                <div class="resturant-card">
+                    <img src="{{url_for('static', filename='img/Oasis.jpg') }}" alt="Oasis;" style="width: 290px;height: 185px; border-radius: 20px;">
+                    <h3>Oasis Food Court</h3>
+                    <p>Enjoy Various types of meals</p>
+                    <a href="{{url_for('oasis_menu_page')}}" style="color:#c0392b;">
+                        <button class="action-btn">View Menu</button>
+                    </a>
+                </div>
+            <!-- </a> -->
+                <div class="resturant-card">
+                    <!-- <a href="{{url_for('annapurna_menu_page')}}"  style="color:#c0392b;"> -->
+                    <img src="{{url_for('static', filename='img/annapurna.jpg') }}" alt="Annapurna" style="width: 315px;height: 185px; border-radius: 20px;">
+                    <h3>Annapurna Food Court</h3>
+                    <p>Try the delicious Veg foods here</p>
+                    <a href="{{url_for('annapurna_menu_page')}}" style="color:#c0392b;">
+                        <button class="action-btn">View Menu</button>
+                    </a>
+                </div>
+                <div class="resturant-card">
+                    <!-- <a href="{{url_for('floating_menu_page')}}" style="color: #c0392b;"> -->
+                    <img src="{{url_for('static', filename='img/floatingrestaurant.jpg') }}" alt="Floating Resturant" style="width: 300px; height: 185px;border-radius: 20px;">
+                    <h3>Floating Resturant</h3>
+                    <p>Enjoy resturant food with good ambiance</p>
+                    <a href="{{url_for('floating_menu_page')}}" style="color:#c0392b;">
+                        <button class="action-btn">View Menu</button>
+                    </a>
+                </div>
+                
+
+                <div class="resturant-card">
+                    <!-- <a href="{{url_for('arena_menu_page')}}"  style="color: #c0392b;"> -->
+                    <img src="{{url_for('static', filename='img/arena.jpg') }}" alt="Arena" style="width: 300px; height: 187px;border-radius: 20px;">
+                    <h3>Arena Food Court</h3>
+                    <p>A diverse menu from around the globe.</p>
+                    <a href="{{url_for('arena_menu_page')}}" style="color:#c0392b;">
+                        <button class="action-btn">View Menu</button>
+                    </a>
+                </div>
+                <!--div class="resturant-card">
+                    <img src="Feista.jpg" alt="Flavour Feista" style=" width: 300px;height: 185px; border-radius: 20px;">
+                    <h3>Flavour Feista</h3>
+                    <p>A diverse menu from around the globe</p>
+
+                </div-->
+
+                <div class="resturant-card">
+                    <img src="{{url_for('static', filename='img/magna.jpg') }}" alt="Magna Food Court" style="width: 300px ;height: 185px;border-radius: 20px;" >
+                    <h3>Magna Food Court</h3>
+                    <p>Enjoy Various types of meals</p>
+                    <a href="{{url_for('magna_menu_page')}}" style="color:#c0392b;">
+                        <button class="action-btn">View Menu</button>
+                    </a>
+                </div>
+
+                <div class="resturant-card">
+                    <!--img src="arena.jpg" alt="Arena" style=" width: 300px;height: 185px; border-radius: 20px;"-->
+
+                    <img src="{{url_for('static', filename='img/Feista.jpg') }}"alt="Flavour Feista" style=" width: 300px;height: 185px; border-radius: 20px;">
+                    <h3>Feista Food Court</h3>
+                    <p>A diverse menu from around the globe.</p>
+                    <a href="{{url_for('fiesta_menu_page')}}" style="color:#c0392b;">
+                        <button class="action-btn">View Menu</button>
+                    </a>
+                </div>
+
+                <div class="resturant-card">
+                    <img src="{{url_for('static', filename='img/ILA.jpg') }}" alt="ILA;" style=" width: 300px;height: 185px; border-radius: 20px;">
+                    <h3>ILA Food Court</h3>
+                    <p>Have a taste of South meals and flavoured rice here.</p>
+                    <a href="{{url_for('ILA_menu_page')}}" style="color:#c0392b;">
+                        <button class="action-btn">View Menu</button>
+                    </a>
+                </div>
+            </div>
+    </main>
+
+    </footer>
+    <!-- <script src="foodcourt.js"></script> -->
+</body>
+
+</html>

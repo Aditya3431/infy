@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magna Food court</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .menu-section {
+      margin-bottom: 40px;
+    }
+    .menu-item {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      margin: 10px 0;
+    }
+    .menu-text {
+      flex: 1;
+    }
+    .menu-text h3 {
+      margin: 0;
+    }
+    .menu-text p {
+      margin: 5px 0;
+    }
+    .menu-image {
+      width: 120px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-left: 20px;
+    }
+    .add-button {
+      background-color:#e74c3c;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .add-button:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <h1>Annapurna Food Court</h1>
+
+  <div class="menu-section">
+    <h2>Popular Items</h2>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Kulcha</h3>
+        <p>price - 20</p>
+        <p>A soft and fluffy Indian flatbread,traditionally baked in a tandoor or on a hot griddle.</p>
+        <button class="add-button" onclick="addItem('Kulcha')">Add Item</button>
+      </div>
+      <img src="https://www.bing.com/th/id/OIP.wuaiVhzXph7n4UR1-y7QhAHaEK?w=307&h=180&c=7&r=0&o=5&pid=1.7" alt="Kulcha" class="menu-image">
+    </div>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Veg Roll </h3>
+        <p>price - Rs 70</p>
+        <p>A soft,warm wrap filled with a medley of sauteed vegetables,flavourful spices,and tangy sauces.</p>
+        <button class="add-button" onclick="addItem('Veg Roll')">Add Item</button>
+      </div>
+      <img src="https://www.bing.com/th/id/OIP.32URY1OO7cDvTR2G3FcuAwAAAA?w=310&h=152&c=7&r=0&o=5&pid=1.7" alt="Veg Roll " class="menu-image">
+    </div>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Veg Puff</h3>
+        <p>price - Rs 85</p>
+        <p>A puff pastry are all-purpose flour, butter (or shortening), water and salt.</p>
+        <button class="add-button" onclick="addItem('Salmon with Asparagus')">Add Item</button>
+      </div>
+      <img src="https://www.bing.com/th/id/OIP.k3QoFZUqpS7WJgJbEB0gigHaE_?w=272&h=184&c=7&r=0&o=5&pid=1.7" alt="Salmon" class="menu-image">
+    </div>
+    <div class="menu-item">
+        <div class="menu-text">
+          <h3>Chicken Twist</h3>
+          <p>price - Rs 70</p>
+          <p>A savory,golden-baked pastry filled with seasoned chicken,herbs,and melted cheese,all wrapped in a flaky,twisted dough that delivers a delightful crunch in every bite.</p>
+          <button class="add-button" onclick="addItem('Chicken Twist')">Add Item</button>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.Abmmye2Ky6Y4itPJJictkwHaE-?w=292&h=196&c=7&r=0&o=5&pid=1.7" alt="Chicken Twist" class="menu-image">
+      </div>
+      <div class="menu-item">
+        <div class="menu-text">
+          <h3>Veg Sandwitch </h3>
+          <p>price - Rs 50</p>
+          <p>A fresh and wholesome sandwitch layered with crisp vegetables,creamy spreads,and flavourful seasonings,all tucked between slices of soft,toasted bread-perfect for a light yet satisfying bite.</p>
+          <button class="add-button" onclick="addItem('Veg Sandwitch')">Add Item</button>
+        </div>
+        <img src="https://www.bing.com/th/id/OIP.RtwXyZbJROfq9yN398oKEQHaD4?w=311&h=180&c=7&r=0&o=5&pid=1.7" alt="Veg Sandwitch" class="menu-image">
+      </div>
+  </div>
+
+  <div class="menu-section">
+    <h2>Juice</h2>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Mix fruit juice</h3>
+        <p>price - Rs 80</p>
+        <p>Mixture of all the seasonal fruits.</p>
+        <button class="add-button" onclick="addItem('Mix fruit juice')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP.ZYgSDpO5byg-YQ48yLanAgHaGX?w=200&h=180&c=7&r=0&o=5&pid=1.7" alt="Mix fruit juice" class="menu-image">
+    </div>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Mango Juice</h3>
+        <p>price - Rs 70</p>
+        <p>A mixture of fresh Mangoes,sugar and some ice cubes.</p>
+        <button class="add-button" onclick="addItem('Mango Juice')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP.ntRtgrO_pwP8I3S-X5SeFQHaE7?w=266&h=180&c=7&r=0&o=5&pid=1.7" alt="Mango Juice" class="menu-image">
+    </div>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Grape Juice</h3>
+        <p>price - Rs 70</p>
+        <p>A mixture of fresh Grapes,sugar and some ice cubes..</p>
+        <button class="add-button" onclick="addItem('Grape Juice')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP.RS509uLC6GEqdOXS1cdiEgHaE6?w=269&h=180&c=7&r=0&o=5&pid=1.7" alt="Grape Juice" class="menu-image">
+    </div>
+    <div class="menu-item">
+        <div class="menu-text">
+          <h3>Orange Juice</h3>
+          <p>price - Rs 70</p>
+          <p>A mixture of fresh Oranges ,sugar and some ice cubes..</p>
+          <button class="add-button" onclick="addItem('Orange Juice')">Add Item</button>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.F_W9U4L_wpNejHZyMWQivgAAAA?w=260&h=180&c=7&r=0&o=5&pid=1.7" alt="Orange Juice" class="menu-image">
+      </div>
+      <div class="menu-item">
+        <div class="menu-text">
+          <h3>Lime Juice</h3>
+          <p>price - Rs 70</p>
+          <p>A tangy,citrusy liquid extracted from fresh limes,typically green and oval-shaped fruits,sugar and some ice cubes,rich in vitamin C and antioxidants.</p>
+          <button class="add-button" onclick="addItem('Lime Juice')">Add Item</button>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.2ziZG6li6fKnUpwx9oJTYQHaEK?w=333&h=187&c=7&r=0&o=5&pid=1.7" alt="Lime Juice" class="menu-image">
+      </div>
+      <div class="menu-item">
+        <div class="menu-text">
+          <h3>Banana Shake</h3>
+          <p>price - Rs 65</p>
+          <p>A mixture of fresh Banana,milk,sugar and some ice cubes..</p>
+          <button class="add-button" onclick="addItem('Banana Shake')">Add Item</button>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.4D6wRx8QrcE-6nGfNse--AHaE8?w=261&h=180&c=7&r=0&o=5&pid=1.7" alt="Banana Shake" class="menu-image">
+      </div>
+      <div class="menu-item">
+        <div class="menu-text">
+          <h3>Oreo Chocolate Shake</h3>
+          <p>price - Rs 90</p>
+          <p>Oreo Biscuts,sugar,milk,chocolates,choco powder, and some ice cubes..</p>
+          <button class="add-button" onclick="addItem('Oreo Chocolate Shake')">Add Item</button>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.J6SzpiLgcyw--UgcVwFyqQHaE8?w=232&h=180&c=7&r=0&o=5&pid=1.7" alt="Oreo Chocolate Shake" class="menu-image">
+      </div>
+  </div>
+
+  <div class="menu-section">
+    <h2>Main Courses</h2>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Mushroom Briyani</h3>
+        <p>price - Rs 55</p>
+        <p>It is a simple rice-based biryani recipe prepared with a combination of basmati rice and juicy fresh mushroom slices.  .</p>
+        <button class="add-button" onclick="addItem('Mushroom Briyani')">Add Item</button>
+      </div>
+      <img src="https://www.bing.com/th/id/OIP.W1YESAJki5esrmpGdgp9IAHaHa?w=146&h=146&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Mushroom Briyani" class="menu-image">
+    </div>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Veg Pulao</h3>
+        <p>price - Rs 55</p>
+        <p>Called by various names such as pilaf or pulav, Vegetable Pulao is one of the most common rice dishes in India, the other being Veg Biryani.</p>
+        <button class="add-button" onclick="addItem('Veg Pulao')">Add Item</button>
+      </div>
+      <img src="https://www.bing.com/th/id/OIP.yE1fUg21P2QkaZjya33qzwHaHa?w=146&h=146&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Veg Pulao" class="menu-image">
+    </div>
+    <div class="menu-item">
+        <div class="menu-text">
+          <h3>Chicken Ghee Rice</h3>
+          <p>price - Rs 130</p>
+          <p>My favorite meal ever is ghee rice with chicken curry. Milk-ghee rice and spicy chicken stew are a match made in heaven..</p>
+          <button class="add-button" onclick="addItem('Chicken Ghee Rice')">Add Item</button>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.isaJOc0SDHWayIYuKbF-3AHaD4?w=307&h=180&c=7&r=0&o=5&pid=1.7" alt="Chicken Ghee Rice" class="menu-image">
+      </div>
+      <div class="menu-item">
+        <div class="menu-text">
+          <h3>Veg Briyani</h3>
+          <p>price - Rs 80</p>
+          <p>A colorful rice dish made with basmati rice,fresh vegetables,and a blend of aromatic spices like cardamon,cloves and cinnamon.</p>
+          <button class="add-button" onclick="addItem('Veg Briyani')">Add Item</button>
+        </div>
+        <img src="https://i.ytimg.com/vi/Do7ZdUodDdw/maxresdefault.jpg" alt="Veg Briyani" class="menu-image">
+      </div>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>South Meals</h3>
+        <p>price - Rs 80</p>
+        <p>Rice,Roti 2 pieces,Sambar,Rasam,One Fry item and a Curry.</p>
+        <button class="add-button" onclick="addItem('South Meals')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP.RQ83hiVo7DV41NguNXP2KQHaE7?w=242&h=180&c=7&r=0&o=5&pid=1.7" alt="SSouth Meals" class="menu-image">
+    </div>
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>Kerala Poratha </h3>
+      <p>price - Rs 70</p>
+      <p>A flaky and layered South Indian bread, is a culinary masterpiece that has captured food enthusiasts’ hearts and taste buds worldwide</p>
+      <button class="add-button" onclick="addItem('Kerala Poratha')">Add Item</button>
+    </div>
+    <img src="https://th.bing.com/th/id/OIP.FUvnGVN-q5tp3AuZJ9o8jgHaEK?rs=1&pid=ImgDetMain" alt="Kerala Poratha" class="menu-image">
+  </div>
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>Wheat Poratha</h3>
+      <p>price - Rs 70</p>
+      <p>Crispy, flaky layered flat bread made healthy with whole wheat flour. Serve them with any gravy or dal for a weeknight dinner and surprise your family.</p>
+      <button class="add-button" onclick="addItem('Wheat Poratha')">Add Item</button>
+    </div>
+    <img src="https://th.bing.com/th/id/OIP.0YwHEl5Px7YjJ6ggOLUsLAHaE8?w=264&h=180&c=7&r=0&o=5&pid=1.7" alt="Wheat Poratha" class="menu-image">
+  </div>
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>Podi Idli</h3>
+      <p>price - Rs 45</p>
+      <p>Podi Idli is a quick South Indian Breakfast dish made by tossing steamed idlis in a spicy ground lentil condiment known as Podi.</p>
+      <button class="add-button" onclick="addItem('Podi Idli')">Add Item</button>
+    </div>
+    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/12/podi-idli-recipe.jpg" alt="Podi Idli" class="menu-image">
+  </div>
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>Plain Dosa</h3>
+      <p>price - Rs 36</p>
+      <p>Plain dosa is a traditional South Indian dish made of a fermented batter of rice and lentils. It is a thin, crispy pancake-like dish usually served with chutney and sambar.</p>
+      <button class="add-button" onclick="addItem('Plain Dosa')">Add Item</button>
+    </div>
+    <img src="https://th.bing.com/th/id/OIP.d0l39gif7KkVFntnE-StIgHaHa?w=169&h=180&c=7&r=0&o=5&pid=1.7" alt="Plain Dosa" class="menu-image">
+  </div>
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>Masala Dosa</h3>
+      <p>price - Rs 42</p>
+      <p>Masala Dosa is a popular South Indian breakfast where a crispy crepe made of fermented rice and lentil batter is served with flavorful spiced potato curry. It is a wholesome meal in itself as it is served with potato masala, Coconut chutney and Sambar. </p>
+      <button class="add-button" onclick="addItem('Masala Dosa')">Add Item</button>
+    </div>
+    <img src="https://th.bing.com/th/id/OIP.-j-Dn_I9dZJi5J9lL6RN7gHaE8?w=226&h=180&c=7&r=0&o=5&pid=1.7" alt="Masala Dosa" class="menu-image">
+  </div>
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>Set Dosa</h3>
+      <p>price - Rs 42</p>
+      <p>Crispy thick base, soft spongy & fluffy top with a porous texture is what makes these Set Dosa so much different from the regular crisp thin dosas.</p>
+      <button class="add-button" onclick="addItem('Set Dosa')">Add Item</button>
+    </div>
+    <img src="https://th.bing.com/th/id/OIP.-C3ny0yl5GFZlZZMr0uwHAHaE8?w=276&h=184&c=7&r=0&o=5&pid=1.7" alt="Set Dosa" class="menu-image">
+  </div>
+</div>
+
+  <div class="menu-section"> 
+    <h2>Desserts</h2>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Chocolate Mousse</h3>
+        <p>price - Rs 72</p>
+        <p>Rich and creamy chocolate mousse topped with whipped cream and chocolate shavings.</p>
+        <button class="add-button" onclick="addItem('Chocolate Mousse')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP.aGVlR7Pnc4OGyaw879yqaQHaE7?w=299&h=200&c=7&r=0&o=5&pid=1.7" alt="Chocolate Mousse" class="menu-image">
+    </div>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Fruit Tart</h3>
+        <p>price - Rs 75</p>
+        <p>A flaky tart crust filled with pastry cream and topped with an assortment of fresh seasonal fruits.</p>
+        <button class="add-button" onclick="addItem('Fruit Tart')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP.RGbvlnc1OtDFvwAjWuzcdwHaEp?w=279&h=180&c=7&r=0&o=5&pid=1.7" alt="Fruit Tart" class="menu-image">
+    </div>
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Cheesecake</h3>
+        <p>price - Rs 95</p>
+        <p>Classic cheesecake with a graham cracker crust and a smooth, creamy filling, served with a berry compote.</p>
+        <button class="add-button" onclick="addItem('Cheesecake')">Add Item</button>
+      </div>
+      <img src="https://th.bing.com/th/id/OIP.GLI2WQUVnu6AdbnmfGmixwHaE8?rs=1&pid=ImgDetMain" alt="Cheesecake" class="menu-image">
+    </div>
+    <div class="menu-item">
+        <div class="menu-text">
+          <h3>Ice-Creams</h3>
+          <p>price - Rs 90</p>
+          <p>A smooth,creamy frozen dessert made from rich blend of milk,cream,sugar,and flavorings.Churned while freezing to create a light, airy texture,it comes in a wide variety of flavours..</p>
+          <button class="add-button" onclick="addItem('Ice-Cream')">Add Item</button>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.qWEc89dzq5Vc2K_HcwrfZgHaEJ?rs=1&pid=ImgDetMain" alt="Ice-Cream" class="menu-image">
+      </div>
+  </div>
+
+  <script>
+    function addItem(itemName) {
+      alert(itemName + ' added to your order!');
+    }
+  </script>
+</body>
+</html>

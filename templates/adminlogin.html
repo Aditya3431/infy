@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/usersignup.css') }}"/>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Login To Your Account</h2>
+        <form id="signupForm" method="POST">
+            <div class="form-group">
+                <label>Your Employee Id</label>
+                <input name="empid" type="text" placeholder="Employee Id" required/>
+                </div>
+               
+
+             
+                <div class="form-group password-toggle">
+                    <label>Password</label>
+                    <input name="password" type="password"id="password" placeholder="Must have atleast 8 characters" required minlength="8"/>
+                    <span class="password-toggle-icon" onclick="togglePassword('password')"></span>
+
+                </div>
+                <button type="submit" class="btn">Admin Login</button>
+                
+        </form>
+        <div>{{msg}}</div>
+    
+</body>
+</html>

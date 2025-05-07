@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infy Catering Service</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/landingpage1.css') }}">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="overlay">
+            <h1>Delicious Catering for Your Special Event</h1>
+            <p>Enjoy a stress-free event with our top-notch catering services, offering diverse menus and personalized options to suit any occasion. From corporate meetings to wedding celebrations, our team will handle every detail, ensuring your guests savor a memorable dining experience.</p>
+            <a href="#" class="button">Get a Quote</a>
+        </div>
+    </header>
+
+    <section class="login-section">
+        <div class="login-box">
+            <h2>User Registration & Login</h2>
+            <p>Register as a new user or login to access our catering services, view menus, and manage your bookings.</p>
+            <div class="buttons">
+                <a href="{{ url_for('user_signup_page') }}" class="button">Signup</a>
+                <a href="{{ url_for('user_login_page') }}" class="button">Login</a>
+            </div>
+        </div>
+        <div class="login-box">
+            <h2>Admin Login</h2>
+            <p>Login as an administrator to manage catering options, menus, and customer requests.</p>
+            <a href="{{ url_for('admin_login_page') }}" class="button">Admin Login</a>
+        </div>
+    </section>
+
+    <section class="menu-highlights">
+        <h2>Our Menu Highlights</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/OIP.vj3C_VJYRdQHQJkwBf6puAHaE7?cb=iwc1&rs=1&pid=ImgDetMain" alt="Cake">
+                <p>Cakes</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/OIP.aKVH9Tc4-_6cVwO7vST1HQHaE9?cb=iwc1&rs=1&pid=ImgDetMain" alt="Veg Fried Rice">
+                <p>Veg Fried Rice</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/OIP.heNkS103sIE7PJowvwc2_gHaFA?cb=iwc1&rs=1&pid=ImgDetMain" alt="Mango Juice">
+                <p>Juices</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/R.1368acaad60f001fc3793d4d1adff485?rik=w6POuwdc4%2f98cw&riu=http%3a%2f%2fi.huffpost.com%2fgen%2f1107767%2fthumbs%2fo-CLUB-SANDWICH-facebook.jpg&ehk=ofObIJj0qE%2bgM8IOqK%2bGVIShbO0wVhF1CKHPNhDQj6M%3d&risl=&pid=ImgRaw&r=0" alt="Veg Meals">
+                <p>sandwiches</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-content">
+            <img src="https://th.bing.com/th/id/OIP.PddFwcOFXJMoAYfRtFo3AwHaEK?cb=iwc1&rs=1&pid=ImgDetMain" alt="Catering in Kitchen">
+            <div>
+                <h2>Let's Make Your Event Unforgettable</h2>
+                <p>Contact us today to discuss your catering needs and create a customized menu that perfectly complements your event. Our expert team is dedicated to providing exceptional service and delectable cuisine that will delight your guests.</p>
+                <a href="#" class="button">Request a Quote</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
